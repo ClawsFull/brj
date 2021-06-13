@@ -9,4 +9,4 @@ gpuTemp=$(vcgencmd measure_temp)
 # Imprimimos con el formato que queramos. Incluimos la fecha
 echo "$(date)"
 echo "Temperatura CPU = $((cpuTemp/1000))'C"
-echo "Temperatura GPU = $gpuTemp"
+echo "Temperatura GPU = ${gpuTemp/temp=/''}"
